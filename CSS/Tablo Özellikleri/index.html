@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ders 13 - Tablo Özellikleri</title>
+
+    <style>
+        div {
+            overflow: auto;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        table {
+            width: 100%;
+            font-family: sans-serif;
+        }
+
+        td, th {
+            padding: 20px;
+            text-align: center;
+        }
+
+        th {
+            height: 70px;
+            background-color: #2e2e2e;
+            color: white;
+            vertical-align: bottom;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f0f0f0;
+        }
+
+        tr:hover {
+            background-color: #F04322;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Ad</th>
+                    <th>Soyad</th>
+                    <th>Yaş</th>
+                    <th>Pozisyon</th>
+                    <th>Departman</th>
+                    <th>Maaş</th>
+                    <th>Özellik 1</th>
+                    <th>Özellik 2</th>
+                    <th>Özellik 3</th>
+                    <th>Özellik 4</th>
+                    <th>Özellik 5</th>
+                    <th>Özellik 6</th>
+                    <th>Özellik 7</th>
+                </tr>
+            </thead>
+    
+            <tbody>
+                <tr>
+                    <td>Özge</td>
+                    <td>Çetin</td>
+                    <td>23</td>
+                    <td>Comp Eng</td>
+                    <td>1</td>
+                    <td>10.000</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>10</td>
+                </tr>
+    
+                <tr>
+                    <td>Müge</td>
+                    <td>Çetin</td>
+                    <td>23</td>
+                    <td>Lawyer</td>
+                    <td>5</td>
+                    <td>5.000</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>10</td>
+                </tr>
+    
+                <tr>
+                    <td>Ali</td>
+                    <td>Yılmaz</td>
+                    <td>33</td>
+                    <td>Comp Eng</td>
+                    <td>1</td>
+                    <td>17.000</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>10</td>
+                </tr>
+    
+                <tr>
+                    <td>Ayşe</td>
+                    <td>Demir</td>
+                    <td>28</td>
+                    <td>Software Eng</td>
+                    <td>2</td>
+                    <td>7.000</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>10</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

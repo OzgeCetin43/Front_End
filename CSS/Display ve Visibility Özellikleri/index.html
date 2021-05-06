@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ders 14 - Display ve Visibility Özellikleri</title>
+
+    <style>
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 20px;
+        }
+
+        p {
+            color: forestgreen;
+        }
+
+        span {
+            color: indigo;
+        }
+
+        .d-inline {
+            display: inline;
+            color: blue;
+        }
+
+        .d-block {
+            display: block;
+            color: red;
+        }
+
+        .d-none {
+            display: none;
+        }
+
+        .visib-hid {
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <p>Deneme 1</p>
+    <p>Deneme 2</p>
+
+    <p class="d-inline">Deneme 1</p>
+    <p class="d-inline">Deneme 2</p>
+
+    <hr>
+
+    <span>Deneme 1</span>
+    <span>Deneme 2</span>
+
+    <span class="d-block">Deneme 1</span>
+    <span class="d-block">Deneme 2</span>
+
+    <hr>
+    
+    <span class="visib-hid">Deneme 1</span>
+    <span>Deneme 2</span><br>
+
+    <span class="d-none">Deneme 1</span>
+    <span>Deneme 2</span>
+</body>
+</html>
