@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ders 19 - Pseudo Elements</title>
+
+    <style>
+        p {
+            line-height: 1.5;
+            letter-spacing: 1px;
+        }
+
+        p::first-letter {
+            font-size: 40px;
+            color: #fe5423;
+        }
+
+        p::first-line {
+            color: brown;
+            font-variant: small-caps;
+            border-bottom: 1px solid brown;
+        }
+
+        p::after {
+            content: "✰";
+            color: blue;
+        }
+
+        p::before {
+            content: "✰";
+        }
+
+        p::selection {
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt soluta veniam impedit in, dicta aliquid quaerat tempore omnis nihil ullam id. Ipsa error natus exercitationem ducimus nostrum placeat maiores. Esse.
+    Quas doloremque perferendis alias nam suscipit fugit quasi non itaque quae dolorum earum totam, labore ad doloribus consectetur. Alias esse expedita nobis maxime eius? Sed, dolore. Nobis ipsa dignissimos officiis?
+    Quae, quam? Eaque animi ratione sequi quam quia enim quis, voluptas debitis laudantium suscipit sint explicabo. Optio temporibus recusandae reprehenderit perspiciatis fugit aliquam ad? Modi iure animi illum exercitationem nemo!
+    Praesentium, aliquam dolore? Dolores totam cum architecto autem, placeat aspernatur nostrum, excepturi ullam dolore labore laboriosam consequuntur deleniti eos officiis accusantium porro similique doloremque, laborum necessitatibus eligendi. Impedit, commodi blanditiis?
+    Impedit est cum optio accusamus nihil assumenda voluptatibus accusantium doloremque dignissimos nobis veniam quo fugit eos eius quaerat iusto molestias architecto corporis sit officiis blanditiis a, inventore quae. Dolor, atque.
+    Blanditiis deserunt nostrum sint excepturi, nam voluptatibus, aliquam corporis neque autem possimus earum voluptatem hic ut provident veritatis cum beatae? Tempore, dolorum vero? Esse, nihil? Amet aliquam sunt eligendi? Veritatis?</p>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ders 21 - Target Selector</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        ul li {
+            padding: 10px 0;
+            margin: 10px;
+            background-color: hotpink;
+            text-align: center;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 20px;
+            padding: 10px;
+        }
+
+        ul li a:hover {
+            color: #217ca3;
+        }
+
+        div {
+            display: none;
+            width: 25%;
+            margin: auto;
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: justify;
+        }
+
+        div .article-header {
+            color: #217ca3;
+            margin: 10px;
+        }
+
+        div .article-content {
+            line-height: 1.5;
+        }
+
+        div .read-more {
+            width: 100%;
+            background-color: #217ca3;
+            padding: 10px;
+            outline: none;
+            border: none;
+            color: #fff;
+        }
+
+        :target {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#article1">Article 1</a></li>
+        <li><a href="#article2">Article 2</a></li>
+        <li><a href="#article3">Article 3</a></li>
+    </ul>
+
+    <div id="article1">
+        <h1 class="article-header">Article 1</h1>
+        <p class="article-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, est excepturi provident dolores aperiam architecto obcaecati nemo asperiores illo sed tempore non repellat officia dignissimos? Sequi voluptatem accusantium sunt! Maiores.
+        Officiis veniam cupiditate magnam eveniet nemo architecto in dolorem iusto praesentium recusandae. Eius odio ratione similique culpa quibusdam. Beatae nisi dicta eius. Ea quisquam harum, ratione dicta tempore quibusdam voluptatibus.
+        Ullam odio quasi et illum commodi a magni quo delectus sunt fugiat ratione, esse aperiam quibusdam magnam eveniet tempore quos minima quas, dolores pariatur, cupiditate dolor consectetur enim! Labore, quae!
+        Eveniet magnam repellendus ducimus quaerat molestias tempora officia eaque dolores. Accusantium earum qui veniam eligendi illum aspernatur corporis eum deserunt officia ut quo animi itaque delectus, quidem autem dolores tempora!</p>
+        <button class="read-more">Read More</button>
+    </div>
+
+    <div id="article2">
+        <h1 class="article-header">Article 2</h1>
+        <p class="article-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, est excepturi provident dolores aperiam architecto obcaecati nemo asperiores illo sed tempore non repellat officia dignissimos? Sequi voluptatem accusantium sunt! Maiores.
+        Officiis veniam cupiditate magnam eveniet nemo architecto in dolorem iusto praesentium recusandae. Eius odio ratione similique culpa quibusdam. Beatae nisi dicta eius. Ea quisquam harum, ratione dicta tempore quibusdam voluptatibus.
+        Ullam odio quasi et illum commodi a magni quo delectus sunt fugiat ratione, esse aperiam quibusdam magnam eveniet tempore quos minima quas, dolores pariatur, cupiditate dolor consectetur enim! Labore, quae!
+        Eveniet magnam repellendus ducimus quaerat molestias tempora officia eaque dolores. Accusantium earum qui veniam eligendi illum aspernatur corporis eum deserunt officia ut quo animi itaque delectus, quidem autem dolores tempora!</p>
+        <button class="read-more">Read More</button>
+    </div>
+
+    <div id="article3">
+        <h1 class="article-header">Article 3</h1>
+        <p class="article-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, est excepturi provident dolores aperiam architecto obcaecati nemo asperiores illo sed tempore non repellat officia dignissimos? Sequi voluptatem accusantium sunt! Maiores.
+        Officiis veniam cupiditate magnam eveniet nemo architecto in dolorem iusto praesentium recusandae. Eius odio ratione similique culpa quibusdam. Beatae nisi dicta eius. Ea quisquam harum, ratione dicta tempore quibusdam voluptatibus.
+        Ullam odio quasi et illum commodi a magni quo delectus sunt fugiat ratione, esse aperiam quibusdam magnam eveniet tempore quos minima quas, dolores pariatur, cupiditate dolor consectetur enim! Labore, quae!
+        Eveniet magnam repellendus ducimus quaerat molestias tempora officia eaque dolores. Accusantium earum qui veniam eligendi illum aspernatur corporis eum deserunt officia ut quo animi itaque delectus, quidem autem dolores tempora!</p>
+        <button class="read-more">Read More</button>
+    </div>
+</body>
+</html>

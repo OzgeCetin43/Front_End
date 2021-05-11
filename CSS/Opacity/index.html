@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ders 20 - Opacity</title>
+
+    <style>
+        img {
+            opacity: 0.5;
+        }
+
+        img:hover {
+            opacity: 1;
+        }
+
+        p {
+            padding: 20px;
+            font-size: 20px;
+            background-color: red;
+            margin: 0;
+        }
+
+        div p:first-child {
+            opacity: 0.25;
+        }
+
+        div p:nth-child(2) {
+            opacity: 0.5;
+        }
+
+        div p:nth-child(3) {
+            opacity: 0.75;
+        }
+
+    </style>
+</head>
+<body>
+    <img src="https://picsum.photos/536/354">
+
+    <div>
+        <p>Opacity 0.25</p>
+        <p>Opacity 0.5</p>
+        <p>Opacity 0.75</p>
+        <p>Opacity 1</p>
+    </div>
+</body>
+</html>
