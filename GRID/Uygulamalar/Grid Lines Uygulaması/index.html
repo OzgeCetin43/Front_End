@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Lines Uygulaması</title>
+
+    <style>
+        .container {
+            display: grid;
+            width: 50%;
+            margin: auto;
+            background-color: lightblue;
+            grid-template-columns: auto auto auto;
+            grid-gap: 10px;
+            padding: 10px;
+            text-align: center;
+            font-weight: 900;
+        }
+
+        .item {
+            background-color: lightcyan;
+            padding: 20px;
+        }
+
+        .item:first-child {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        .item:nth-child(2) {
+           grid-row-start: 1;
+           grid-row-end: 3;
+           grid-column-start: 3;
+           grid-column-end: 4;
+        }
+
+        .item:last-child {
+           grid-column-start: 1;
+           grid-column-end: 4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+</body>
+</html>
