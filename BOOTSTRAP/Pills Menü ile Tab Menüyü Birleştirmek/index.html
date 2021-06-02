@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Ders 35 - Pills Menü ile Tab Menüyü Birleştirmek</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <ul class="nav nav-pills justify-content-center">
+        <li class="nav-item">
+            <a href="#home" class="nav-link" data-toggle="tab">Home</a>
+        </li>
+
+        <li class="nav-item">
+            <a href="#about" class="nav-link" data-toggle="tab">About Us</a>
+        </li>
+
+        <li class="nav-item">
+            <a href="#contact" class="nav-link" data-toggle="tab">Contact</a>
+        </li>
+    </ul> 
+    
+    <div class="tab-content text-justify">
+        <div class="tab-pane active" id="home">
+            <div class="container">
+                <h1>Home</h1>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis sunt, odio cum distinctio veritatis laudantium doloremque doloribus exercitationem reprehenderit molestiae velit illo libero praesentium aperiam vero optio suscipit vel fuga.
+                    Blanditiis atque, repellendus deleniti minus molestias deserunt quis ratione esse rem. Neque, maxime tempora. Repellat provident odit quis corporis laborum voluptas dolor nemo laudantium, esse, dignissimos nesciunt quisquam ducimus dolores?
+                    Voluptatibus aperiam praesentium quisquam. Quas cumque quia necessitatibus alias eaque natus porro, fuga quo perferendis facere, velit architecto, consequatur dignissimos optio aut incidunt esse? Aut corporis est itaque inventore impedit!
+                    Dolorem nesciunt pariatur omnis provident architecto repellat sunt necessitatibus unde possimus ab, facere veniam obcaecati, mollitia quam libero at, voluptates totam cum ut explicabo error fugiat. Explicabo deleniti nihil vel.
+                    Repellat dolorem facilis nam quasi corporis numquam eius aliquam, a ratione. Nostrum delectus molestias vitae neque, sint recusandae reiciendis temporibus voluptates, illum iusto sapiente nisi perspiciatis repellendus odit atque? Optio!
+                </p>
+            </div>
+        </div>
+
+        <div class="tab-pane" id="about">
+            <div class="container">
+                <h1>About Us</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur optio ex voluptas, adipisci perferendis debitis sequi nulla officiis, quos obcaecati rerum labore. Porro, libero. Dolor, molestias vero? Natus, necessitatibus beatae!
+                Quas sunt eveniet provident explicabo deleniti repellendus aperiam, temporibus dolores fugit modi assumenda voluptates dolor laboriosam commodi necessitatibus cum cupiditate! Officiis similique velit quam, nisi iste odit molestias accusamus pariatur.
+                Vero alias soluta reiciendis fuga eos dolorem dolore consequuntur delectus nisi, ab, in beatae culpa eius autem rerum omnis? Repellat maxime, vitae earum fugiat consectetur odit! Possimus quas aut mollitia!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora accusantium eaque laborum quisquam delectus totam fuga necessitatibus possimus odit ipsa nostrum repudiandae quod, incidunt accusamus harum culpa ut vitae veniam.
+                Quisquam id reiciendis, at repellendus porro asperiores numquam exercitationem. Omnis ex expedita labore ratione cupiditate recusandae. Natus iusto aperiam consequuntur fugit nihil aliquam harum, praesentium excepturi eum soluta aspernatur ipsam!</p>
+            </div>
+        </div>
+
+        <div class="tab-pane" id="contact">
+            <div class="container">
+                <form action="">
+                    <div class="form-row">
+                        <div class="col-md-6">
+                            <label for="name">Adınız</label>
+                            <input type="text" class="form-control" placeholder="Adınızı giriniz" id="name" name="name" required>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="lastname">Soyadınız</label>
+                            <input type="text" class="form-control" placeholder="Soyadınızı giriniz" id="lastname" name="lastname" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="email">Emaliniz</label>
+                        <input type="email" placeholder="Emailinizi giriniz" id="email" name="email" class="form-control" required>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="messsage">Mesajınız</label>
+                        <textarea name="message" id="message" rows="10" class="form-control" style="resize: vertical;" placeholder="Mesajınızı giriniz" required></textarea>
+                    </div>
+
+                    <div class="form-row mt-3">
+                        <div class="col-md-4">
+                            <button class="btn btn-dark btn-block" type="submit">Gönder</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
