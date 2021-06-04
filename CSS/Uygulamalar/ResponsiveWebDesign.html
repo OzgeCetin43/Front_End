@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Design</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #ddd;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            background-color: #fff;
+            padding: 30px;
+        }
+
+        header h1 {
+            margin: 20px 0 20px;
+        }
+
+        nav {
+            background-color: #2e2e2e;
+        }
+
+        nav ul {
+            list-style-type: none;
+        }
+
+        nav ul li {
+            display: inline-block;
+        }
+
+        nav ul li a {
+            display: inline-block;
+            padding: 20px;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        nav ul li a:hover {
+            background-color: #eee;
+            color: #2e2e2e;
+        }
+
+        nav ul li:last-child {
+            position: absolute;
+            right: 20px;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .content .left-area {
+            width: 60%;
+            margin: 10px;
+            padding: 30px;
+        }
+
+        .content-area {
+            background-color: #fff;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        .content-area small{
+            display: block;
+        }
+
+        .content-area h1, small, p {
+            margin: 10px 0;
+        }
+
+        .content-area img {
+            width: 50%;
+        }
+
+        .content .left-area, .content .right-area {
+            display: inline-block;
+        }
+
+        .content .right-area {
+            width: 35%;
+            padding: 18px;
+        }
+
+        .content .right-area img {
+            display: inline-block;
+            width: 50%;
+        }
+
+        .content .right-area .content-area:nth-child(2) {
+            text-align: center;
+        }
+
+        footer {
+            padding: 20px;
+            font-size: 20px;
+            color: #eee;
+            background-color: #2e2e2e;
+            text-align: center;
+        }
+
+        @media(max-width: 768px) {
+            .content {
+                padding: 10px;
+            }
+
+            .content .left-area, .content .right-area, .content-area {
+                width: 100%;
+                margin: 10px auto;
+                padding: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Header</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, odio?</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="content">
+        <div class="left-area">
+            <div class="content-area">
+                <h1>Heading </h1>
+                <small>May 14, 2021</small>
+                <img src="./images/team2.png">
+                <p>Lorem, ipsum.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae, sunt? Harum, maxime accusantium? Repellendus dolorem temporibus ad corrupti esse veniam, recusandae officia minima ea! Quisquam facere ab veniam est doloremque?
+                Veritatis id, enim repellendus minus dolores recusandae eos corrupti tempora maiores necessitatibus beatae dolorum distinctio dicta neque cum minima reprehenderit, tenetur temporibus animi adipisci corporis ullam eum vitae. Maxime, amet.</p>
+            </div>
+
+            <div class="content-area">
+                <h1>Heading </h1>
+                <small>May 14, 2021</small>
+                <img src="./images/team8.png">
+                <p>Lorem, ipsum.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae, sunt? Harum, maxime accusantium? Repellendus dolorem temporibus ad corrupti esse veniam, recusandae officia minima ea! Quisquam facere ab veniam est doloremque?
+                Veritatis id, enim repellendus minus dolores recusandae eos corrupti tempora maiores necessitatibus beatae dolorum distinctio dicta neque cum minima reprehenderit, tenetur temporibus animi adipisci corporis ullam eum vitae. Maxime, amet.</p>
+            </div>
+        </div>
+
+        <div class="right-area">
+            <div class="content-area">
+                <h1>About Us</h1>
+                <img src="./images/team6.png">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis numquam libero illum laborum excepturi laudantium dolorem iure veniam molestias debitis?</p>
+            </div>
+
+            <div class="content-area">
+                <h1>New Posts</h1>
+                <img src="./images/team1.png">
+                <img src="./images/team3.png">
+                <img src="./images/team4.png">
+            </div>
+
+            <div class="content-area">
+                <h1>Follow me</h1>
+                <p>Lorem, ipsum dolor.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Footer</p>
+    </footer>
+</body>
+</html>

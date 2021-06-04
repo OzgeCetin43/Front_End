@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ders 22 - Attribute Selector</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+
+    <style>
+        abbr[title] {
+            color: red;
+        }
+
+        a[target = "_blank"] {
+            color: green;
+            text-decoration: none;
+        }
+
+        a[target ^= "_"] {
+            font-size: 50px;
+        }
+
+        div[class ~= "box"] {
+            margin-top: 10px;
+            background-color: #2f2f2f;
+            color: white;
+        }
+
+        p[class |= "description"] {
+            background-color: aqua;
+        }
+
+        p[class $= "small-p"] {
+            background-color: yellow;
+        }
+
+        p[class *= "big"] {
+            color: red;
+        }
+ 
+    </style>
+</head>
+<body>
+    <p>Bu sayfa <abbr title="Özge Çetin">Ö.Ç.</abbr> tarafından yapılmıştır</p>
+
+    <a href="https://www.linkedin.com/in/%C3%B6zge-%C3%A7etin-02216116a/" target="_blank">
+        <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="https://github.com/OzgeCetin43" target="_top">
+        <i class="fab fa-github-square"></i>
+    </a>
+
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad doloremque, placeat quisquam laudantium necessitatibus, vel hic quas rerum eum eligendi ab amet dignissimos voluptatum. Laboriosam autem aut eos molestias sapiente, similique officia voluptatum et ullam veniam, error explicabo cumque magni excepturi. Porro tempore voluptatibus expedita fugit libero odio fuga? Consequatur!
+    </div>
+
+    <div class="box article">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum est at delectus dignissimos odio ratione dolorem illo? Dolorum rem itaque, voluptates nemo at eius doloribus sed, nesciunt iure, ab reiciendis?
+        Eius enim doloremque, nesciunt cupiditate libero laborum dolore, iste dolorem voluptates labore alias, asperiores fuga accusamus. Quas optio, molestiae recusandae laboriosam sed, pariatur dignissimos qui, fugit quae numquam maiores ab!
+        Eius quibusdam aliquam ratione sapiente similique obcaecati quae dicta deserunt in fugit debitis, expedita minima molestias, dolores culpa enim eveniet! Officiis maiores repellat animi veniam quos sit perspiciatis delectus doloribus!
+        Praesentium voluptatem, quibusdam et eos accusamus quasi? Odit iure repudiandae, pariatur cupiditate laboriosam corrupti. Ullam laboriosam molestias adipisci illum nostrum repellendus? Laborum a culpa iure at dolores mollitia repellendus? Repudiandae!
+        Fugiat voluptate iure eum dicta laborum non, quia labore at molestias, nam expedita deleniti illo laboriosam sit officia autem reprehenderit, temporibus unde animi. Laborum vitae quo, rerum blanditiis soluta deserunt?
+    </div>
+
+    <div class="article-box">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi quam, veniam accusantium aperiam nobis totam obcaecati eaque tempora soluta doloribus nisi cupiditate, ea molestiae earum perspiciatis voluptas placeat non blanditiis.</div>
+
+    <p class="description">Lorem, ipsum.</p>
+    <p class="description-small">Lorem, ipsum.</p>
+
+    <p class="desc-small-p">Lorem ipsum...</p>
+    <p class="desc-2-small-p">Lorem ipsum...</p>
+
+    <p class="big">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ad quo dolores, vero ratione architecto nihil minus, voluptatem soluta totam distinctio fugiat non, ipsa excepturi! Accusantium accusamus libero neque repudiandae.
+    Inventore pariatur obcaecati id tenetur magnam possimus ad voluptas natus rem architecto perspiciatis placeat explicabo assumenda veritatis, ex dolore ullam ratione distinctio ipsam voluptatibus et tempore nulla nobis rerum. Soluta!
+    Nisi consectetur reiciendis fuga aut consequatur illo ea optio quidem nam impedit? Qui consequuntur odit architecto ipsam vitae adipisci, quo ullam in nostrum omnis, deleniti modi animi? Modi, repellendus eum.
+    Laudantium, neque. Est soluta exercitationem, tempora eos eius natus ducimus eligendi suscipit rerum, aperiam vel at ullam dignissimos qui a accusamus blanditiis enim amet quia molestiae magnam quos eaque similique.
+    Ad enim vero illum, sit officiis sed assumenda ratione aspernatur tempora corrupti dicta pariatur reprehenderit quod voluptatum. Dolorum voluptatem ea, vero sit ducimus nostrum, voluptate accusamus similique minima tempora animi?
+    Repellat minus impedit necessitatibus architecto, tempora accusantium deleniti. Ipsa iste possimus officia sunt quaerat, ipsum repellendus eos neque aspernatur eaque est deleniti ratione quod doloribus, vel dicta cum accusantium culpa.
+    Dolores esse sit possimus debitis, delectus labore reiciendis officiis! Eum quos quidem cum cumque amet deleniti nemo hic a libero dolorum nobis corrupti enim saepe, dolores laboriosam beatae magnam. Possimus.
+    Excepturi, tempora mollitia. Et iure corporis doloremque, tenetur ut voluptates quis? Molestias dolorem earum libero, fugiat obcaecati commodi natus dignissimos facilis! Commodi at similique voluptatum officia quia rerum delectus illo.</p>
+
+    <p class="descriptionbig">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas exercitationem distinctio, maxime voluptate, perspiciatis nulla hic omnis cupiditate placeat modi, autem commodi laudantium repudiandae repellat deserunt voluptatibus ex molestias asperiores.
+    Reiciendis culpa libero non possimus quo laudantium sint ipsum perferendis doloremque! Id, delectus amet. Ipsum incidunt asperiores nostrum error repellendus! Illum assumenda rem veritatis sed vero soluta ducimus amet repellendus!
+    Non aliquid iure libero officia! Adipisci tempora quaerat qui animi non eius nostrum nihil dicta perferendis debitis. Consequatur exercitationem dolor, eligendi ex fugiat recusandae dolorum quo, ea vero quis numquam.
+    Nobis, ea. Vel perferendis eos velit id vitae molestiae laudantium facere tempore dolores natus tempora perspiciatis sequi, nobis nostrum accusamus soluta. Corporis voluptas minus eius? Repellat officia dolorem omnis alias.
+    Voluptatem ab dolorem aliquam corrupti maiores alias quasi animi, aut nostrum hic doloremque neque magni beatae iure. Aperiam nemo assumenda quo exercitationem, voluptatem nobis ad distinctio fugit in, architecto accusamus?
+    Minus qui itaque nam officiis. Cupiditate, autem rerum et id quisquam ut, dolores accusantium esse aliquid qui optio omnis vero maiores facere temporibus sunt officia aperiam necessitatibus magnam sapiente deleniti.
+    Dolor nemo distinctio consectetur debitis voluptatibus tempore libero ducimus reprehenderit. Temporibus porro possimus soluta cum iste molestias sint autem odio alias, expedita omnis, est laboriosam nisi vitae? Accusantium, aliquid ipsum.</p>
+
+    <p class="description-big-title">Lorem, ipsum dolor.</p>
+</body>
+</html>

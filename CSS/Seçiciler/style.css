@@ -1,0 +1,17 @@
+.p-text {
+    text-align: center;
+    font-size: 18px;
+}
+
+p.p-text {
+    color: red;
+}
+
+span.p-text {
+    color: blue;
+}
+
+#p-id-text {
+    text-align: right;
+    color: orangered;
+}

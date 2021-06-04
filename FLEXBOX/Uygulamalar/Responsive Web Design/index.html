@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Design</title>
+
+    <style>
+        * {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+
+        .container header {
+            text-align: center;
+        }
+
+        .container header .header-info .mini-description {
+            padding: 30px;
+            background-color: #fb8c00;
+        }
+
+        .container header .header-info .header-description {
+            background-color: #43a047;
+            padding: 60px;
+            color: white;
+        }
+
+        .container header nav ul {
+            text-align: left;
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+            background-color: #2e2e2e;
+            border: 1px solid #2e2e2e;
+        }
+
+        .container header nav ul li a {
+            display: inline-block;
+            padding: 20px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .container header nav ul li a:hover {
+            background-color: #eee;
+            color: #2e2e2e;
+        }
+
+        .container .main-area {
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            justify-content: space-between;
+            margin: 0 0 10px;
+        }
+
+        .container .main-area .left-side {
+            width: 30%;
+            padding: 20px;
+            background-color: #dedede;
+        }
+
+        .container .main-area .left-side p {
+            margin: 10px 0;
+        }
+
+        .container .main-area .left-side div img {
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .container .main-area .right-side {
+            width: 70%;
+            padding: 20px;
+        }
+
+        .container .main-area .right-side div img {
+            width: 100%;
+            margin: 10px 0;
+        }
+
+        .container .main-area .right-side div {
+            padding: 25px;
+        }
+
+        .container .main-area .right-side div p {
+            margin: 10px 0;
+        }
+
+        footer {
+            padding: 50px 0;
+            background-color: #2e2e2e;
+            color: white;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        @media(max-width: 800px) {
+            .container {
+                width: 100%;
+            }
+
+            .container header nav ul, .container .main-area {
+                flex-direction: column;
+            }
+
+            .container header nav ul li {
+                width: 100%;
+                text-align: center;
+            }
+
+            .container header nav ul li a {
+                width: 100%;
+            }
+
+            .container .main-area .left-side, .container .main-area .right-side {
+                width: 100%;
+            }
+        }
+
+        @media(max-width: 360px) {
+            .container header .header-info .header-description {
+                padding: 30px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-info">
+                <b><p class="mini-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, culpa.</p></b>
+
+                <div class="header-description">
+                    <h1>My Responsive Web Design</h1>
+                    <p>Lorem ipsum <strong>dolor</strong> sit.</p>
+                </div>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="main-area">
+            <div class="left-side">
+                <div>
+                    <h1>About Me</h1>
+                    <p>Photo of me: </p>
+                    <img src="../images//img11.jpg">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis nisi minima quam sed vitae sint autem deleniti harum id.</p>
+                </div>
+
+                <div>
+                    <h1>More Text</h1>
+                    <p>Lorem ipsum dolor sit.</p>
+                    <img src="../images//dag.jpg">
+                    <img src="../images//doga.jpg">
+                    <img src="../images//sehir.jpg">
+                </div>
+            </div>
+            <div class="right-side">
+                <div>
+                    <h1>TITLE HEADING</h1>
+                    <small>Title description, Dec 7, 2017</small>
+                    <img src="../images/title-1.jpg">
+                    <p>Some text..</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore culpa doloremque commodi illo explicabo ducimus accusamus, alias unde eligendi molestias libero assumenda, aliquid voluptatum labore omnis nulla rerum dolorem quo!</p>
+                </div>
+                <div>
+                    <h1>TITLE HEADING</h1>
+                    <small>Title description, Dec 7, 2017</small>
+                    <img src="../images/title-1.jpg">
+                    <p>Some text..</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore culpa doloremque commodi illo explicabo ducimus accusamus, alias unde eligendi molestias libero assumenda, aliquid voluptatum labore omnis nulla rerum dolorem quo!</p>
+                </div>
+            </div>
+        </div>
+
+        <footer>Footer</footer>
+    </div>
+</body>
+</html> 
