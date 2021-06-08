@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ders 2 - JS Kullanarak HTML Attribute'larını Değiştirme</title>
+
+    <style>
+        #bulbChange {
+            display: block;
+            width: 110px;
+            padding: 10px;
+            background-color: red;
+            color: white;
+            border: 0;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <img src="../images/close.jpg" id="bulb">
+    <button id="bulbChange" onclick="openOrClose()">Aç</button>
+
+    <script>
+        function openOrClose() {
+            var btn = document.getElementById("bulbChange");
+            var bulb = document.getElementById("bulb");
+
+            if(btn.innerHTML == "Aç") {
+                bulb.src="../images/open.jpg";
+                btn.innerHTML = "Kapat";
+            }
+
+            else {
+                bulb.src="../images/close.jpg";
+                btn.innerHTML = "Aç";
+            }
+        }
+    </script>
+</body>
+</html>

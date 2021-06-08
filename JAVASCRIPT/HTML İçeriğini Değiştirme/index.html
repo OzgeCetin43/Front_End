@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ders 1 - JS Kullanarak HTML İçeriğini Değiştirme</title>
+
+    <style>
+        .button-design {
+            background-color: #252525;
+            color: #dedede;
+            padding: 10px;
+            border-radius: 0.25rem;
+            outline: none;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <p id="ptext">Hello World</p>
+    <button class="button-design" onclick="translateEngToTr()">Türkçeye Çevir</button>
+
+    <script>
+        function translateEngToTr() {
+            document.getElementById("ptext").innerHTML='Merhaba Dünya';
+        }
+    </script>
+</body>
+</html>

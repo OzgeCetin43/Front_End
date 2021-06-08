@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ders 4 - JS Kullanarak HTML Etiketlerinin Görünürlüğünü Değiştirme</title>
+
+    <style>
+        #btnChange {
+            background-color: skyblue;
+            color: blue;
+            outline: none;
+            border: 0;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <p id="ptext">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, voluptatibus.</p>
+    <button onclick="changeVisibility()" id="btnChange">Gizle</button>
+
+    <script>
+        function changeVisibility() {
+            var btn = document.getElementById("btnChange");
+
+            if(btn.innerHTML == "Gizle") {
+                btn.innerHTML = "Göster";
+                document.getElementById("ptext").style.display="none";
+            }
+
+            else {
+                btn.innerHTML = "Gizle";
+                document.getElementById("ptext").style.display="block";
+            }
+        }
+    </script>
+</body>
+</html>

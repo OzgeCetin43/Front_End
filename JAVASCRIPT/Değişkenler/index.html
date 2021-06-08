@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ders 6 - Değişkenler</title>
+</head>
+<body>
+    <p id="first"></p>
+    <p id="second"></p>
+    <p id="third"></p>
+    <p id="fourth"></p>
+    <p id="last"></p>
+
+    <script>
+        // Değişken tanımlama
+        var x;
+        // Değişken atama
+        x = 5 ;
+        // Değişken değerini kullanma
+        document.getElementById("first").innerHTML = x;
+
+        // Birden fazla değişken tanımlama ve atama yapma
+        var sayi1=2, sayi2=9, sayi3=sayi1+sayi2;
+        document.getElementById("second").innerHTML=sayi3;
+
+        // Aynı değişkeni tekrar tanımlama
+        var sayi2;
+        document.getElementById("third").innerHTML=sayi2;
+
+        // String ifadeyi sayılar ile birleştirme
+        var y="8" + 7 + 1;
+        document.getElementById("fourth").innerHTML=y;
+
+        // Değişkene değer atamadan değerini kullanma
+        var z;
+        document.getElementById("last").innerHTML=z;
+    </script>
+</body>
+</html>
