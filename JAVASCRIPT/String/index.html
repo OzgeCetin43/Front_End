@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ders 9 - String</title>
+</head>
+<body>
+    <p id="first"></p>
+    <p id="second"></p>
+    <p id="third"></p>
+    <p id="fourth"></p>
+    <p id="fifth"></p>
+    <p id="sixth"></p>
+
+    <script>
+        var x="Merhaba Dünya";
+        // Özel karakterleri ekranda göstermek
+        var y="Özge: \"Bugün hava çok güzel\" dedi."
+        // Nesne olarak string oluşturmak
+        z=new String("Merhaba Dünya");
+        k=new String("Merhaba Dünya");
+
+        // String ifadenin uzunluğunu bulmak
+        document.getElementById("first").innerHTML=x.length;
+        document.getElementById("second").innerHTML=y;
+        document.getElementById("third").innerHTML=typeof z + " " + z;
+
+        // string ifade ile nesneyi karşılaştırma
+        document.getElementById("fourth").innerHTML= x == z;
+        document.getElementById("fifth").innerHTML= x === z;
+
+        // string nesneleri karşılaştırma
+        document.getElementById("sixth").innerHTML= z === k;
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ders 8 - Nesneler</title>
+
+    <style>
+        table {
+            width: 100%;
+            border: 1px solid #252525;
+            border-collapse: collapse;
+            overflow: auto;
+        }
+
+        th, tr, td {
+            border: 1px solid #252525;
+            padding: 10px;
+            text-align: center;
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: #dedede;
+        }
+
+        tbody tr:hover {
+            background-color: skyblue;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Lastname</th>
+                <th>Age</th>
+                <th>Full Name</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td id="person1Name"></td>
+                <td id="person1Lastname"></td>
+                <td id="person1Age"></td>
+                <td id="person1FullName"></td>
+            </tr>
+    
+            <tr>
+                <td id="person2Name"></td>
+                <td id="person2Lastname"></td>
+                <td id="person2Age"></td>
+                <td id="person2FullName"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        var persons = [
+            {
+                name: "Özge",
+                lastname: "Çetin",
+                age: 23,
+                fullName: function() {
+                    return this.name + " " + this.lastname;
+                }
+            },
+            {
+                name: "Müge",
+                lastname: "Çetin",
+                age: 23,
+                fullName: function() {
+                    return this.name + " " + this.lastname;
+                }
+            }
+        ]
+
+        document.getElementById("person1Name").innerHTML=persons[0].name;
+        document.getElementById("person1Lastname").innerHTML=persons[0].lastname;
+        document.getElementById("person1Age").innerHTML=persons[0].age;
+        document.getElementById("person1FullName").innerHTML=persons[0].fullName();
+
+        // Değerlere ulaşmanın başka yolu
+        document.getElementById("person2Name").innerHTML=persons[1]["name"];
+        document.getElementById("person2Lastname").innerHTML=persons[1]["lastname"];
+        document.getElementById("person2Age").innerHTML=persons[1][["age"]];
+        document.getElementById("person2FullName").innerHTML=persons[1].fullName();
+    </script>
+</body>
+</html>

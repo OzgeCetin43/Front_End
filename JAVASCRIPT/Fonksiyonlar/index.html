@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ders 7 - Fonksiyonlar</title>
+</head>
+<body>
+    <p id="first"></p>
+    <p id="second"></p>
+    <p id="third"></p>
+    <p id="fourth"></p>
+
+    <script>
+        //Fonksiyon Çağırma
+        firstFunction();
+        FtoC(77);
+        var result = multiplyNumbers(10, 2);
+
+        // Parametresiz Fonksiyon
+        function firstFunction() {
+            document.getElementById("first").innerHTML="Hello World";
+        }
+
+        // Parametreli Fonksiyon
+        function FtoC(f) {
+            document.getElementById("second").innerHTML=(5/9)*(f-32)
+        }
+
+        // Değer Döndüren Fonksiyon
+        function multiplyNumbers(number1, number2) {
+            return number1*number2;
+        }
+
+        document.getElementById("third").innerHTML=result;
+
+        document.getElementById("fourth").innerHTML="Result değişkeninin tipi" + " " + typeof result;
+    </script>
+</body>
+</html>
