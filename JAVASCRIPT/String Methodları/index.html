@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ders 10 - String Methodları</title>
+</head>
+<body>
+    <script>
+        var text1 = "Merhaba Dünya";
+        var text2 =  "      Merhaba Dünya       ";
+        var x = "Özge";
+        var y = "Çetin"
+
+        console.log(text1.indexOf("ba"));
+        console.log(text1.indexOf("a"));
+        console.log(text1.indexOf("x"));
+
+        console.log(text1.lastIndexOf("a"));
+        console.log(text1.lastIndexOf("x"));
+
+        console.log(text1.search("Dün"));
+
+        console.log(text1.slice(8,13));
+        console.log(text1.slice(-5));
+
+        console.log(text1.substring(0,7));
+
+        console.log(text1.substr(8,5));
+        console.log(text1.substr(-5,5));
+
+        console.log(text1.replace("Merhaba","Hello"));
+
+        console.log(text1.toUpperCase());
+
+        console.log(text1.toLowerCase());
+
+        console.log(x.concat(" ", y));
+
+        console.log(text2);
+        console.log(text2.trim());
+
+        console.log(x.charAt(0));
+
+        console.log(x.charCodeAt(0));
+    </script>
+</body>
+</html>

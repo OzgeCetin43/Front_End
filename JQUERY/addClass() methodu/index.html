@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>Ders 1 - addClass() Methodu</title>
+
+    <style>
+        .p {
+            margin: 20px 0;
+            font-family: sans-serif;
+            font-size: 18px;
+            letter-spacing: 1px;
+        }
+
+        .firstP {
+            color: red;
+            border-bottom: 1px solid red;
+            padding-bottom: 10px;
+        }
+
+        .midP {
+            background-color: blue;
+            color: #dedede;
+            padding: 10px;
+        }
+
+        .lastP {
+            color: darkorange;
+            border: 1px solid darkorange;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <p>Hello World</p>
+    <p id="mid">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, perspiciatis.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis unde dolorem tempore fuga pariatur vitae tenetur deleniti neque ducimus odio.</p>
+
+    <script>
+        $("p").addClass("p");
+        $("p").first().addClass("firstP");
+        $("p").last().addClass("lastP");
+        $("#mid").addClass("midP");
+    </script>
+</body>
+</html>

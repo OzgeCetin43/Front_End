@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>Ders 2 - attr() Methodu</title>
+    
+    <style>
+        button {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            padding: 10px;
+            border: 1px solid #dedede;
+            background-color: white;
+            color: blue;
+            margin: 10px;
+        }
+
+        div {
+            width: 400px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <img src="../img/image1.jpg" width="400" height="300">
+    <p id="ptext"></p>
+    <div>
+        <button id="increase">+</button>
+        <button id="decrease">-</button>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            document.getElementById("ptext").innerHTML=$("img").attr("width") + "x" + $("img").attr("height") ;
+            $("#increase").click(function() {
+                $("img").attr("width", function(index, value) {
+                    var number = new Number(value);
+                    return number+50;
+                });
+
+                $("img").attr("height", function(index, value) {
+                    var number = new Number(value);
+                    return number+50;
+                });
+
+                document.getElementById("ptext").innerHTML=$("img").attr("width") + "x" + $("img").attr("height") ;
+            });
+
+            $("#decrease").click(function() {
+                $("img").attr("width", function(index, value) {
+                    return value-50;
+                });
+
+                $("img").attr("height", function(index, value) {
+                    return value-50;
+                });
+
+                document.getElementById("ptext").innerHTML=$("img").attr("width") + "x" + $("img").attr("height") ;
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
+    <title>Ders 4 - html() Methodu</title>
+
+    <style>
+        p {
+            cursor: pointer;
+        }
+        
+        u {
+            display: block;
+        }
+
+        button {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <p><b>Hello </b><span style="color: skyblue;">world</span></p>
+    <p>Merhaba <span style="color: skyblue;"><b>Dünya</b></span></p>
+
+    <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, ipsum.</div>
+
+    <button id="read">Read More</button>
+    
+    <u>Deneme 1</u>
+    <u>Deneme 2</u>
+
+    <button id="change">Change Content</button>
+
+    <script>
+        $("p").click(function() {
+            var txt = $(this).html();
+            $(this).text(txt);
+        });
+
+        $("#read").click(function() {
+            $("div").html($("div").html() + "<b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, eum?</b>");
+        });
+
+        $("#change").click(function() {
+            $("u").html(function(index, content) {
+                return content + " change to => " + index + "." + "Deneme";
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>Ders 7 - removeClass() Methodu</title>
+
+    <style>
+        p {
+            font-family: sans-serif;
+            font-weight: bold;
+            font-size: 20px;
+            padding: 20px;
+        }
+
+        .txtColor {
+            color: blue;
+        }
+
+        .bg {
+            background-color: lightcoral;
+        }
+
+        .border {
+            border: 1px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <p class="txtColor bg border">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem hic animi magni facilis dicta ullam, voluptate atque at qui quisquam!</p>
+    <p class="txtColor bg border">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores ipsam consectetur facere suscipit amet in fugit excepturi recusandae incidunt placeat.</p>
+    <p class="txtColor bg border">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui asperiores sit dignissimos sint doloribus magnam, rerum eius cum possimus odio.</p>
+
+    <button>Change Class</button>
+
+    <script>
+        $("button").click(function() {
+            var $x = $("p");
+
+            $x.first().removeClass("bg");
+            $x.last().removeClass("txtColor");
+        });
+    </script>
+</body>
+</html>

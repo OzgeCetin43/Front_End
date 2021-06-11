@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ders 11 - Numbers</title>
+</head>
+<body>
+    <script>
+        var x = 10;
+        var y = 10.4;
+
+        var result = 0.1 + 0.2;
+        var result2 = (0.1*10 + 0.2*10)/10;
+
+        var a = "10";
+        var b = 2;
+        var c = 9;
+
+        var text1 = "Deneme"
+
+        var result3 = c/text1;
+        var result4 = b/a;
+
+        console.log(x + " type = " + typeof x + " y type = " + typeof y);
+        console.log(result);
+        console.log(result2);
+
+        console.log(a+b);
+        console.log(a*b);
+        console.log(b+c+a);
+
+        console.log(result3);
+        console.log(isNaN(result3));
+        console.log(isNaN(result4));
+        
+        var number = 3;
+        var resultTxt = "";
+
+        while(number != Infinity) {
+            number *= number;
+            resultTxt += number + "\n";
+        }
+
+        console.log(resultTxt);
+
+        console.log(5/0);
+        console.log(-7/0);
+
+        var hexNumber = 0xFF;
+        var decimalNumber = 10;
+
+        console.log(hexNumber);
+        console.log("2 tabanında 10 sayısının değeri => " + decimalNumber.toString(2));
+
+        var object1 = new Number(9);
+        var object2 = new Number(9);
+
+        console.log(object1 == c);
+        console.log(object1 === c);
+        console.log(object1 === object2);
+
+    </script>
+</body>
+</html>

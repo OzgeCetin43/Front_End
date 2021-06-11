@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>Ders 3 - hasClass() Methodu</title>
+
+    <style>
+        .selected {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <p class="selected">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, veritatis! Atque quae alias laboriosam animi?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed totam harum dolor rerum quas eveniet iure deleniti! Vel, laudantium odit.</p>
+
+    <div id="result1">Birinci paragraf selected class'ına sahip mi? : </div>
+    <div id="result2">İkinci paragraf selected class'ına sahip mi? : </div>
+    <div id="result3">Herhangi bir paragraf selected class'ına sahip mi? : </div>
+
+    <script>
+        $("#result1").append($("p").first().hasClass("selected").toString());
+        $("#result2").append($("p").last().hasClass("selected").toString());
+        $("#result3").append($("p").hasClass("selected").toString());
+    </script>
+</body>
+</html>
