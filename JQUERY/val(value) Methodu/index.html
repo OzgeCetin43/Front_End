@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>Ders 10 - val(value) Methodu</title>
+
+    <style>
+        .main {
+            display: flex;
+            margin-bottom: 10px;
+        }
+
+        .inner {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <p>Hangi butona 3 kez tıklarsanız input alanında o gözükecektir. Input alanına başka bir şey yazarsanız içindeki yazı büyük harflerle bastırılacaktır.</p>
+    <div class="main">
+        <div class="inner">
+            <button>Merhaba</button>
+            <span></span>
+        </div>
+        <div class="inner">
+            <button>Dünya</button>
+            <span></span>
+        </div>
+        <div class="inner">
+            <button>Hello</button>
+            <span></span>
+        </div>
+        <div class="inner">
+            <button>World</button>
+            <span></span>
+        </div>
+    </div>
+
+    <input type="text">
+
+    <script>
+        $("button").each(function() {
+            var count = 0;
+            $(this).click(function() {
+                count++;
+                var counter = $(this).next();
+                counter.text(count);
+                if(count % 3 == 0) {
+                    $("input").val($(this).text());
+                }
+            });
+        });
+
+        $("input").on("blur", function() {
+            $("input").val(function(index, value) {
+                return value.toUpperCase();
+            });
+        })
+    </script>
+</body>
+</html>
