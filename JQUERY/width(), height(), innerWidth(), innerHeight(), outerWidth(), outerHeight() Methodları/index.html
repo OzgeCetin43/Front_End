@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>Ders 12 - width(), height(), innerWidth(), innerHeight(), outerWidth(), outerHeight() Methodları</title>
+
+    <style>
+        div {
+            width: 300px;
+            height: 300px;
+            border: 1px solid red;
+            background-color: pink;
+            margin: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+
+    <script>
+        $("div").html(
+            "<b>Width : <b>" + $("div").width() + "<br>" +
+            "<b>Height : <b>" + $("div").height() + "<br>" +
+            "<b>InnerWidth : <b>" + $("div").innerWidth() + "<br>" +
+            "<b>InnerHeighth : <b>" + $("div").innerHeight() + "<br>" +
+            "<b>OuterWidth : <b>" + $("div").outerWidth() + "<br>" +
+            "<b>OuterHeight : <b>" + $("div").outerHeight() + "<br>" +
+            "<b>OuterWidth(true) : <b>" + $("div").outerWidth(true) + "<br>" +
+            "<b>OuterHeight(true) : <b>" + $("div").outerHeight(true) + "<br>" 
+        );
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>Ders 11 - css() Methodu</title>
+
+    <style>
+        p {
+            border: 1px solid blue;
+            background-color: skyblue;
+            padding: 20px;
+        }
+
+        div {
+            border: 1px solid blue;
+            width: 300px;
+            height: 300px;
+        }
+
+        span {
+            display: inline-block;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <p>Hello World</p>
+    <span></span>
+
+    <div></div>
+
+    <script>
+        $(document).ready(function() {
+            $("p").click(function() {
+                var span = $(this).next();
+
+                span.text($(this).css("background-color"));
+
+                $("div").css({"background-color":$(this).css("background-color"), "border": "1px solid red"});
+            });
+        });
+    </script>
+</body>
+</html>

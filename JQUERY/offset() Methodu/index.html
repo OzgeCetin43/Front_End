@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>Ders 13 - offset() Methodu</title>
+
+    <style>
+        #mid {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <p>This is a paragraf 1</p>
+    <p id="mid">This is a paragraf 2</p>
+    <p>This is a paragraf 3</p>
+    <span>Coordinates</span>
+    <br>
+    <button>Change Coordinates</button>
+
+    <script>
+        $("button").click(function() {
+            var coordinate = new Object();
+            coordinate.left = 200;
+            coordinate.top = 400;
+
+            $("span").append($("p").last().offset().top);
+
+            $("p").last().offset(coordinate);
+
+            $("p").first().offset($("#mid").offset());
+
+            $("#mid").offset(function(index, value) {
+                var pos = new Object();
+                pos.left = value.left + 50;
+
+                return pos;
+            })
+        });
+    </script>
+
+</body>
+</html>
