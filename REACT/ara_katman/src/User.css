@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+    align-items: center;
+    width: 500px;
+    background-color: crimson;
+    color: white;
+    margin: 10px auto;
+    flex-wrap: wrap;
+}
+
+p {
+    margin-left: 10px;
+}
