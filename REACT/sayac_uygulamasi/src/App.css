@@ -1,0 +1,28 @@
+.App {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #282c34;
+  color: #fff;
+}
+
+button {
+  padding: 20px;
+  margin: 10px;
+  outline: none;
+  border: none;
+}
+
+button:first-child {
+  background-color: lightcoral;
+}
+
+button:nth-child(2) {
+  background-color: lightskyblue;
+}
+
+button:last-child {
+  background-color: lightgreen;
+}
