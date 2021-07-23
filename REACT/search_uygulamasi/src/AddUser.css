@@ -1,0 +1,42 @@
+.form-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    background-color: lightsteelblue;
+}
+
+.form-container input {
+    width: 80%;
+    padding: 10px;
+    margin: 5px 0;
+    font-size: 18px;
+    color: steelblue;
+    outline: none;
+    border: 2px solid steelblue;
+}
+
+.form-container input::placeholder {
+    color: steelblue;
+}
+
+.form-container button {
+    width: 50%;
+    padding: 10px;
+    background-color: steelblue;
+    outline: none;
+    color: white;
+    border: 1px solid steelblue;
+    margin-top: 10px;
+}
+
+.form-container button:hover {
+    color: steelblue;
+    background-color: white;
+}
+
+@media(max-width: 360px) {
+    .form-container {
+      width: 100%;
+    }
+}
