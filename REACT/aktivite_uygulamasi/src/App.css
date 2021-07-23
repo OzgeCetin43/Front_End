@@ -1,0 +1,28 @@
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #212121;
+  color: #fff;
+}
+
+
+.container p {
+  font-size: 20px
+}
+
+.season {
+  color: #add8e6;
+  font-size: 30px;
+}
+
+.fa-snowman, .fa-sun {
+  font-size: 45px;
+  margin: 10px 0;
+}
+
+.fa-sun {
+  color: #ffff00;
+}
