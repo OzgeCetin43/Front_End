@@ -1,0 +1,9 @@
+.parent {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #2e2e2e;
+  color: #fff;
+}
