@@ -1,0 +1,47 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  margin: 0 auto;
+}
+
+.btn {
+  align-self: center;
+  width: 40%;
+  background-color: #1EA9E0;
+  color: #fff;
+  padding: 10px;
+  outline: none;
+  border: none;
+}
+
+.container .addUser {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-size: 24px;
+  font-weight: bolder;
+  background-color: #1EA9E0;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+
+@media(max-width: 576px) {
+  .container {
+    width: 100%;
+  }
+}
