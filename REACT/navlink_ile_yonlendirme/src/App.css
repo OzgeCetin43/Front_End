@@ -1,0 +1,11 @@
+.link {
+  display: inline-block;
+  color: #f0f;
+  background-color: #212121;
+  font-size: 18px;
+}
+
+.link2 {
+  padding: 20px;
+  text-decoration: none;
+}
