@@ -1,0 +1,19 @@
+.link {
+  display: inline-block;
+  padding: 20px;
+  text-decoration: none;
+  color: #152643;
+}
+
+.link:hover {
+  color: #fff;
+  background-color: #152643;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 93.5vh;
+  background-color: #152643;
+}
